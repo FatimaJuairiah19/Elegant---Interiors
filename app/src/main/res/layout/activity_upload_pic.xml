@@ -23,13 +23,14 @@
 
     <ImageView
         android:id="@+id/image_view"
-        android:layout_marginLeft="100dp"
-        android:layout_width="330dp"
+        android:layout_marginLeft="20dp"
+        android:layout_width="315dp"
         android:layout_height="match_parent"
         android:layout_below="@+id/button_choose_image"
         android:layout_alignParentStart="true"
-        android:layout_marginStart="0dp"
-        android:background="@drawable/upload"
+
+        android:background="@drawable/uploadpg"
+
         android:layout_marginTop="30dp"
         android:layout_marginBottom="110dp"/>
 

@@ -56,6 +56,9 @@ public class DesignerLoginActivity extends AppCompatActivity {
                     finish();
 
                 }
+                else{
+                    Toast.makeText(DesignerLoginActivity.this, "Login Failed", Toast.LENGTH_SHORT).show();
+                }
 
             }
         });

@@ -82,7 +82,14 @@ public class UserProfile extends AppCompatActivity {
     }
 
     public void logOut(View view) {
-        Intent intent = new Intent(UserProfile.this,SignInSelection.class);
+        //Intent intent = new Intent(UserProfile.this,MainActivity.class);
+        //startActivity(intent);
+
+        Intent intent = new Intent(this, SignInSelection.class);
+        intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
         startActivity(intent);
+        finish();
+
+
     }
 }

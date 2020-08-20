@@ -18,36 +18,41 @@
         android:textStyle="bold" />
 
     <EditText
-        android:layout_margin="20dp"
         android:id="@+id/username"
+        android:textSize="30dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_margin="20dp"
         android:layout_marginTop="10dp"
-        android:textColor="#fff"
+        android:background="#FAEBEFFF"
         android:hint="Username"
-        android:textColorHint="#fff"/>
+        android:textColor="#8A2BE2"
+        android:textColorHint="#000" />
 
     <EditText
         android:id="@+id/email"
+        android:textSize="30dp"
         android:layout_margin="20dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textColor="#fff"
+        android:textColor="#8A2BE2"
         android:layout_marginTop="10dp"
-
+        android:background="#FAEBEFFF"
         android:hint="Email"
-        android:textColorHint="#fff"/>
+        android:textColorHint="#000"/>
 
     <EditText
         android:id="@+id/password"
+        android:textSize="30dp"
         android:layout_margin="20dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
         android:hint="Password"
-        android:textColor="#fff"
+        android:background="#FAEBEFFF"
+        android:textColor="#8A2BE2"
         android:inputType="textPassword"
-        android:textColorHint="#fff"/>
+        android:textColorHint="#000"/>
 
     <Button
         android:id="@+id/btn_register"

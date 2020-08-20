@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/one"
+    android:background="@drawable/newlogin"
     tools:context=".SignInSelection">
 
     <LinearLayout
@@ -19,7 +19,7 @@
             android:textColor="@color/first"
             android:textSize="40dp"
             android:textStyle="italic"
-            android:layout_marginLeft="63dp"
+            android:layout_marginLeft="70dp"
             android:layout_marginTop="170dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintLeft_toLeftOf="parent"
@@ -29,26 +29,30 @@
 
         <Button
             android:id="@+id/one"
-            android:layout_width="300dp"
+            android:background="#8cc6e5"
+            android:layout_width="210dp"
             android:layout_height="70dp"
-            android:layout_marginLeft="55dp"
+            android:layout_marginLeft="130dp"
             android:text="User login"
             android:onClick="gotoUserPage"
             android:textSize="25dp"
             android:textStyle="italic"
             android:layout_marginTop="35dp"
+            android:gravity="center"
             />
 
         <Button
             android:id="@+id/two"
-            android:layout_width="300dp"
+            android:background="#8cc6e5"
+            android:layout_width="250dp"
             android:layout_height="70dp"
-            android:layout_marginLeft="55dp"
+            android:layout_marginLeft="100dp"
             android:text="Designer login"
             android:onClick="gotoDesignerLoginActivity"
             android:textSize="25dp"
             android:textStyle="italic"
             android:layout_marginTop="20dp"
+            android:gravity="center"
             />
 
 
