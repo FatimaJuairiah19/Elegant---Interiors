@@ -92,4 +92,9 @@ public class UserProfile extends AppCompatActivity {
 
 
     }
+
+    public void goToContact(View view) {
+        Intent intent = new Intent(UserProfile.this, ChatMainActivity.class);
+        startActivity(intent);
+    }
 }

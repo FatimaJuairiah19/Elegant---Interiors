@@ -21,7 +21,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".imageActivity"></activity>
+        <activity android:name=".DesignerProfile"></activity>
+        <activity android:name=".DesignerPageActivity" />
+        <activity android:name=".MessageActivity" />
+        <activity android:name=".ChatMainActivity" />
+        <activity android:name=".imageActivity" />
         <activity android:name=".UploadPic" />
         <activity android:name=".Catagory" />
         <activity android:name=".UserPage" />

@@ -52,7 +52,7 @@ public class DesignerLoginActivity extends AppCompatActivity {
             public void onSuccess(AuthResult authResult) {
                 if(FirebaseAuth.getInstance().getUid().equals("BjM412tpdSNRWFEq8bqwXZUR55h2")) {
                     Toast.makeText(DesignerLoginActivity.this, "Login Successful!", Toast.LENGTH_SHORT).show();
-                    startActivity(new Intent(DesignerLoginActivity.this,UserProfile.class));
+                    startActivity(new Intent(DesignerLoginActivity.this,DesignerProfile.class));
                     finish();
 
                 }
@@ -66,5 +66,11 @@ public class DesignerLoginActivity extends AppCompatActivity {
 
 
 
+    }
+
+    public void gotoDesigerpage(View view) {
+
+        Intent intent = new Intent(DesignerLoginActivity.this,DesignerPageActivity.class);
+        startActivity(intent);
     }
 }

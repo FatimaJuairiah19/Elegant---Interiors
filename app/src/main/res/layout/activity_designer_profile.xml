@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".UserProfile">
+    tools:context=".DesignerProfile">
 
 
     <RelativeLayout
@@ -58,42 +58,16 @@
             android:text="Contact"
             android:textSize="25sp"
             android:textColor="#fff"
-            android:layout_marginTop="15dp"
-            android:onClick="goToContact"
-            android:background="@drawable/button_rounded"/>
-        <Button
-
-            android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:onClick="goToUpload"
-            android:text="upload room photo"
-            android:textSize="25sp"
-            android:textColor="#fff"
-            android:layout_marginTop="85dp"
+            android:layout_marginTop="150dp"
+            android:onClick="goToContact2"
             android:background="@drawable/button_rounded"/>
 
-        <Button
 
-            android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:text="Suggested Photo"
-            android:onClick="gotoCatagory"
-            android:textSize="25sp"
-            android:textColor="#fff"
-            android:layout_marginTop="155dp"
-            android:background="@drawable/button_rounded"/>
 
-        <Button
 
-            android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:text="About"
-            android:textSize="25sp"
-            android:textColor="#fff"
-            android:layout_marginTop="225dp"
-            android:background="@drawable/button_rounded"
-            android:onClick="goToAbout"
-            />
+
+
+
 
         <Button
 
@@ -102,9 +76,9 @@
             android:text="Log out"
             android:textSize="25sp"
             android:textColor="#fff"
-            android:layout_marginTop="295dp"
+            android:layout_marginTop="225dp"
             android:background="@drawable/button_rounded"
-            android:onClick="logOut"
+            android:onClick="logOut2"
             />
 
 

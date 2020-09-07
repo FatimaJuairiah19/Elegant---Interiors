@@ -26,6 +26,7 @@
             android:baselineAligned="false"
             android:text="Login your account"
             android:layout_marginLeft="35dp"
+
             android:textStyle="bold"
             android:background="#D8BFD8"
             android:textSize="20dp" />
@@ -40,6 +41,7 @@
             android:background="#FAEBEFFF"
             android:baselineAligned="false"
             android:hint="Email"
+            android:drawableLeft="@drawable/ic_email_black_24dp"
             android:inputType="textEmailAddress"
             android:textColor="#7a96ea"
             android:textColorHint="#e79fc4"
@@ -56,6 +58,7 @@
             android:baselineAligned="false"
             android:hint="Password"
             android:inputType="textPassword"
+            android:drawableLeft="@drawable/ic_dialpad_black_24dp"
             android:textColor="#7a96ea"
             android:textColorHint="#e79fc4"
 

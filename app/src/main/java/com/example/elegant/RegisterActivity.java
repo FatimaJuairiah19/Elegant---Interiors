@@ -8,6 +8,7 @@ import android.app.ProgressDialog;
 import android.content.Intent;
 import android.os.Bundle;
 import android.text.TextUtils;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -24,6 +25,7 @@ import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.core.Tag;
 
 import java.util.HashMap;
 
@@ -75,6 +77,8 @@ public class RegisterActivity extends AppCompatActivity {
                     @Override
                     public void onComplete(@NonNull Task<AuthResult> task) {
                         if (task.isSuccessful()){
+
+
                             FirebaseUser firebaseUser = auth.getCurrentUser();
                             assert firebaseUser != null;
                             String userid = firebaseUser.getUid();
@@ -87,6 +91,23 @@ public class RegisterActivity extends AppCompatActivity {
                             hashMap.put("imageURL", "default");
                             hashMap.put("status", "offline");
                             hashMap.put("search", username.toLowerCase());
+
+
+                            firebaseUser.sendEmailVerification().addOnSuccessListener(new OnSuccessListener<Void>() {
+                                @Override
+                                public void onSuccess(Void aVoid) {
+                                    Toast.makeText(RegisterActivity.this, "Verification Email has been sent", Toast.LENGTH_SHORT).show();
+
+                                }
+                            }).addOnFailureListener(new OnFailureListener() {
+                                @Override
+                                public void onFailure(@NonNull Exception e) {
+
+                                    Log.d("tag", "onFailure: Email not sent"+ e.getMessage());
+
+                                }
+                            });
+
 
 
                             reference.setValue(hashMap).addOnCompleteListener(new OnCompleteListener<Void>() {
