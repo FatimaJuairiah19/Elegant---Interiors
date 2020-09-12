@@ -21,7 +21,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".DesignerProfile"></activity>
+        <activity android:name=".MainDrawingDecorActivity"></activity>
+        <activity android:name=".MainBedDecorActivity" />
+        <activity android:name=".BedroomDecorActivity" />
+        <activity android:name=".DesignerProfile" />
         <activity android:name=".DesignerPageActivity" />
         <activity android:name=".MessageActivity" />
         <activity android:name=".ChatMainActivity" />

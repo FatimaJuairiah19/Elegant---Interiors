@@ -4,86 +4,146 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".DesignerProfile">
+    tools:context=".MainActivity">
 
-
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="250dp"
-
-        android:layout_alignParentStart="true"
-
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
         android:layout_alignParentTop="true"
-        android:background="@drawable/bacround_gradient"
-        android:gravity="center">
-
-        <TextView
-
-            android:id="@+id/pName"
-
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-
-            android:layout_marginTop="180dp"
-            android:gravity="center"
-            android:textColor="#fff"
-            android:textSize="30dp"
-            android:textStyle="bold"
+        android:layout_alignParentLeft="true">
 
 
-            />
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical">
 
-        <ImageView
-            android:layout_width="159dp"
-            android:layout_height="145dp"
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
 
-            android:layout_marginTop="10dp"
-            android:background="@drawable/avatar" />
-
-
-    </RelativeLayout>
-
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_marginTop="250dp"
-        android:background="#34495E"
-        >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="230dp"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:background="@drawable/bacround_gradient">
 
 
-        <Button
+                    <ImageView
+                        android:id="@+id/image"
+                        android:layout_width="300dp"
+                        android:layout_height="200dp"
+                        android:layout_marginTop="50dp" />
 
-            android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:text="Contact"
-            android:textSize="25sp"
-            android:textColor="#fff"
-            android:layout_marginTop="150dp"
-            android:onClick="goToContact2"
-            android:background="@drawable/button_rounded"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/pName"
+                        android:textColor="#fff"
+                        android:layout_marginTop="10dp"
+                        android:textSize="30dp"
+                        android:textStyle="bold"
+                        android:layout_gravity="center"
+                        />
 
 
 
 
 
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="270dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="135dp"
+                        android:orientation="horizontal"
+                        android:layout_marginBottom="10dp">
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity = "center"
+                            android:orientation="vertical"
+                            android:layout_marginRight="5dp"
+                            >
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <ImageView
+                                    android:layout_width="50dp"
+                                    android:layout_height="50dp"
+                                    android:id="@+id/imageView1"
+                                    android:src="@drawable/contact"
+                                    android:layout_centerInParent="true"/>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Contract"
+                                    android:textSize="18sp"
+                                    android:textStyle="bold"
+                                    android:layout_below="@+id/imageView1"
+                                    android:layout_centerHorizontal="true"
+                                    android:layout_marginTop="10dp"
+                                    android:layout_marginBottom="10dp"
+                                    />
+
+                                <Button
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:background="@android:color/transparent"
+                                    android:onClick="goToContact2"
+                                    tools:ignore="OnClick" />
+
+                            </RelativeLayout>
+
+
+                        </androidx.cardview.widget.CardView>
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
 
 
 
-        <Button
-
-            android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:text="Log out"
-            android:textSize="25sp"
-            android:textColor="#fff"
-            android:layout_marginTop="225dp"
-            android:background="@drawable/button_rounded"
-            android:onClick="logOut2"
-            />
+            </RelativeLayout>
 
 
 
-    </RelativeLayout>
+            <Button
+                android:layout_marginTop="25dp"
+                android:layout_marginLeft="110dp"
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:text="Log Out"
+                android:textStyle="bold"
+                android:textColor="#fff"
+                android:textSize="20sp"
+                android:background="@drawable/button_rounded"
+                android:onClick="logOut2"
+                tools:ignore="OnClick" />
+
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
 
 
 

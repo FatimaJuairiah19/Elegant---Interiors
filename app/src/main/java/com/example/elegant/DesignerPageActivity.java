@@ -44,7 +44,7 @@ public class DesignerPageActivity extends AppCompatActivity {
     }
     class MypagerAdapter extends FragmentPagerAdapter{
 
-        String[] text={"Users","Chats"};
+        String[] text={"Clients","Clients Room Photos"};
 
         public MypagerAdapter(@NonNull FragmentManager fm) {
             super(fm);

@@ -45,7 +45,7 @@ public class ChatMainActivity extends AppCompatActivity {
     }
     class MypagerAdapter extends FragmentPagerAdapter{
 
-        String[] text={"Users","Chats"};
+        String[] text={" Interior Designer",""};
 
         public MypagerAdapter(@NonNull FragmentManager fm) {
             super(fm);

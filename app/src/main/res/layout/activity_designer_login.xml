@@ -33,6 +33,7 @@
             android:baselineAligned="false"
             android:hint="Email"
             android:inputType="textEmailAddress"
+            android:drawableLeft="@drawable/ic_email_black_24dp"
             android:textSize="30dp" />
 
         <EditText
@@ -43,6 +44,7 @@
             android:background="#ceb19c"
             android:baselineAligned="false"
             android:hint="Password"
+            android:drawableLeft="@drawable/ic_vpn_key_black_24dp"
 
             android:inputType="textPassword"
             android:textSize="30dp" />

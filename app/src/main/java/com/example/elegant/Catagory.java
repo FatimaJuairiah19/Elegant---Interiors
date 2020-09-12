@@ -28,4 +28,16 @@ public class Catagory extends AppCompatActivity {
         Intent intent = new Intent(Catagory.this,imageActivity.class);
         startActivity(intent);
     }
+
+    public void bedroomCatagory(View view) {
+
+        Intent intent = new Intent(Catagory.this,MainBedDecorActivity.class);
+        startActivity(intent);
+    }
+
+    public void gotoDrawingDecor(View view) {
+
+        Intent intent = new Intent(Catagory.this,MainDrawingDecorActivity.class);
+        startActivity(intent);
+    }
 }
